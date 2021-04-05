@@ -6,7 +6,7 @@ package Tablet;
  */
 public class Main {
     public static void main(String[] args) {
-        //CREATE OBJECT NAME AS Ipas, MatePad and GalaxyTabActive
+        //CREATE OBJECT NAME AS Ipad, MatePad and GalaxyTabActive
         Tablet1 Ipad = new Tablet1();
         Tablet1 MatePad = new Tablet1();
         Tablet1 GalaxyTabActive3 = new Tablet1();
