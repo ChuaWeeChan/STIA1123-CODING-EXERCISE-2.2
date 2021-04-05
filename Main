@@ -1,0 +1,65 @@
+package Tablet;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Main {
+    public static void main(String[] args) {
+        //CREATE OBJECT NAME AS Ipas, MatePad and GalaxyTabActive
+        Tablet1 Ipad = new Tablet1();
+        Tablet1 MatePad = new Tablet1();
+        Tablet1 GalaxyTabActive3 = new Tablet1();
+        Tablet1 TotalPrice = new Tablet1();
+        Tablet1 TotalWeight = new Tablet1();
+        Tablet1 UnlockTablet = new Tablet1();
+        
+        System.out.println("\n*********************************************");
+         
+        System.out.println("\niPad SPECIFICATION :-");
+        Ipad.printSpec("Apple", "iOS", 2019, "9.8inch x 6.8inch", 1449,200,'Y');
+        
+        System.out.println("\nMATE PAD SPECIFICATION :-");
+        MatePad.printSpec("Huawei", "EMUI", 2019, "245.2mm X 155mm", 1389,180,'Y');
+        
+        System.out.println("\nGALAXY TAB ACTIVE 3 SPECIFICATION :-");
+        GalaxyTabActive3.printSpec("Samsung", "Android", 2020, "8inch",2070,230,'N');
+        
+        System.out.println("\n*********************************************");
+        
+        System.out.println("\nHOW MUCH SHOULD I SPEND TO GET 3 UNIT OF iPAD ? ");
+        TotalPrice.printTotal(1449, 3, "Apple iPAD");
+        
+        System.out.println("\nHOW MUCH SHOULD I SPEND TO GET 4 UNIT OF MATE PAD ? ");
+        TotalPrice.printTotal(1389, 4, "Huawei Mate Pad");
+        
+        System.out.println("\nHOW MUCH SHOULD I SPEND TO GET 2 UNIT OF GALAXY TAB ACTIVE 3 ? ");
+        TotalPrice.printTotal(2070, 2, "Samsung Galaxy Tab Active 3");
+        
+        System.out.println("\n*********************************************");
+        
+        System.out.println("\nWHAT'S THE WEIGHT FOR 4 UNITS OF iPAD ?");
+        TotalWeight.printWeight("Apple iPad", 200, 4);
+        
+        System.out.println("\nWHAT'S THE WEIGHT FOR 5 UNITS OF MATE PAD ?");
+        TotalWeight.printWeight("Huawei Mate Pad", 180, 5);
+        
+        System.out.println("\nWHAT'S THE WEIGHT FOR 7 UNITS OF GALAXY TAB ACTIVE 3 ?");
+        TotalWeight.printWeight("Samsung Galaxy Tab Active 3", 230, 7);
+        
+        System.out.println("\n*********************************************");
+        
+        System.out.println("\nCAN I UNLOCK MY iPAD USING FINGER PRINT ?");
+        UnlockTablet.unlockTablet("Yes", "can", "Apple iPAD");
+        
+        System.out.println("\nCAN I UNLOCK MY MATE PAD USING FINGER PRINT ?");
+        UnlockTablet.unlockTablet("Yes", "can", "Huawei Mate Pad");
+        
+        System.out.println("\nCAN I UNLOCK MY GALAXY TAB ACTIVE 3 USING FINGER PRINT ?");
+        UnlockTablet.unlockTablet("No", "cant", "Samsung Galaxy Tab Active 3");
+        
+        System.out.println("\n*********************************************");
+                
+    }
+    
+}
