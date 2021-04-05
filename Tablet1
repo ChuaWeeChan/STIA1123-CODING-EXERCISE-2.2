@@ -1,0 +1,54 @@
+package Tablet;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Tablet1 {
+    //DECLARE ALL TYPE OF VARIABLE AND VARIABLE NAME
+    String Brand;
+    String OperatingSystem;
+    int Year;
+    String Size;
+    int SellingPrice;
+    int Weight;
+    char FingerPrint;
+    int Quantity;
+    int totalPrice;
+    int totalWeight;
+    
+    //METHOD TO PRINT SPECIFICATION
+    void printSpec(String brand, String os, int y, String s, int sp, int w, char fp){
+        System.out.println("Brand\t\t\t: "+brand);
+        System.out.println("Operating System\t: "+os);
+        System.out.println("Release Year\t\t: "+y);
+        System.out.println("Size\t\t\t: "+s);
+        System.out.println("Selling Price\t\t: RM"+sp);
+        System.out.println("Weight\t\t\t: "+w+"gm");
+        System.out.println("Finger Print\t\t: "+fp);
+    }
+    
+    //METHOD TO PRINT THE TOTAL PRICE FOR PURCHASED UNITS OF TABLETS
+    void printTotal(int p, int q, String b){
+        totalPrice = (p*q);
+        
+        System.out.println("The Unit Price of "+b+" is : RM "+p);
+        System.out.println("The Total Unit Purchased is : "+q+" units.");
+        System.out.println("The Total Price for "+q+" units of "+b+" is : RM"+totalPrice);
+    }
+    
+    //METHOD TO PRINT THE TOTAL WEIGHT FOR TABLETS
+    void printWeight(String brands, int weight, int quantity){
+        totalWeight = (weight*quantity);
+        
+        System.out.println("The Unit Weight of "+brands+" is : "+weight+"gm.");
+        System.out.println("The Total Unit Purchased is : "+quantity+" units.");
+        System.out.println("The Total Weight for "+quantity+"units of "+brands+" is : "+totalWeight+"gm.");
+    }
+    
+    //METHOD TO SHOW WHETHER CAN UNLOCK USING FINGER PRINT OR NOT
+    void unlockTablet(String YesOrNo,String CanOrCant,String brand2){
+        System.out.println(YesOrNo+", you "+CanOrCant+" unlock your "+brand2+" using finger print.");
+    }
+    
+}
